@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "author": "Carter Mango",
+    "content": "Tôi cảm thấy tôi viết còn hay hơn tác giả này ấy. Đầu voi đuôi chuột dễ sợ. Đọc tới đây thì muốn bỏ luôn, ko đọc nữa cho đỡ tốn thời gian.",
+    "likes": "256",
+    "createdAt": "2 tháng trước"
+  },
+  {
+    "id": 2,
+    "author": "Lincoln Workman",
+    "content": "Tôi cảm thấy tôi viết còn hay hơn tác giả này ấy. Đầu voi đuôi chuột dễ sợ. Đọc tới đây thì muốn bỏ luôn, ko đọc nữa cho đỡ tốn thời gian.",
+    "likes": "119",
+    "createdAt": "3 tháng trước"
+  },
+  {
+    "id": 3,
+    "author": "Craig Botosh",
+    "content": "Tôi cảm thấy tôi viết còn hay hơn tác giả này ấy. Đầu voi đuôi chuột dễ sợ. Đọc tới đây thì muốn bỏ luôn, ko đọc nữa cho đỡ tốn thời gian.",
+    "likes": "5",
+    "createdAt": "8 tháng trước"
+  }
+]
