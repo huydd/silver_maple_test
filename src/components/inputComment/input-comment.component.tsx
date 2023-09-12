@@ -5,17 +5,18 @@ import styles from './input-comment.style';
 import {imgAvatar2} from '../../../assets/images';
 
 interface IInputComment {
-  tag: string;
+  tag: any;
+  article: any;
 }
 
-const InputComment = ({tag}: IInputComment) => {
-  const refInput = useRef<any>();
+const InputComment = ({tag, article}: IInputComment) => {
+  const inputRefs = useRef<any>([]);
 
   useEffect(() => {
     if (tag) {
-      // refInput.current?.focus();
+      inputRefs.current[tag.articleId]?.focus();
     }
-  }, [tag]);
+  }, [article, tag]);
 
   return (
     <View style={styles.container}>
@@ -24,13 +25,13 @@ const InputComment = ({tag}: IInputComment) => {
         style={{width: 24, height: 24}}
         resizeMode="contain"
       />
-      {tag && (
+      {tag?.author && tag?.articleId === article.id && (
         <BaseText size={14} lineHeight={16} color="#528AFF" fontWeight={'500'}>
-          {`@${tag}`}
+          {`@${tag.author}`}
         </BaseText>
       )}
       <TextInput
-        ref={refInput}
+        ref={ref => (inputRefs.current[article?.id] = ref)}
         style={styles.input}
         placeholder={tag ? '' : 'Viết bình luận...'}
         placeholderTextColor={'#B5B5B5'}

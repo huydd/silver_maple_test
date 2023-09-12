@@ -4,11 +4,13 @@ import HomeScreen from './src/screens/home/home.screen';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={containerStyle}>
       <StatusBar barStyle={'light-content'} />
       <HomeScreen />
     </SafeAreaView>
   );
 }
+
+const containerStyle = {flex: 1, backgroundColor: 'white'};
 
 export default App;
